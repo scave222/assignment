@@ -26,9 +26,9 @@
     <script>
 
         let name = prompt("Hi!, what's your name?");
-        if(name == "Alice" || name =="alice" || name == "ALICE"){
+        if(name.toUpperCase() == "ALICE"){
             document.write("Good day Alice!");
-        }else if(name == "Bob" || name == "BOB" || name == "bob"){
+        }else if(name.toUpperCase() == "BOB"){
             document.write("Good day Bob!");
         }else  document.write("Hello");
     

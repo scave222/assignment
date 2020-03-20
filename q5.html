@@ -23,6 +23,32 @@
     </section>
     <h1></h1>
     
-   
+    <script>
+        var firstnum = 0;
+        var num = parseFloat(window.prompt('Enter a number'));
+        var question = window.prompt(`To get the sum of  ${num} type sum or type "product" to get the product 1 to ${num}`)
+
+        if (question.toUpperCase() == 'SUM'){
+        let a = 0;
+        for (let i = 0; i <= num; i++){
+            a = a + num - i;
+        }
+        document.write(`The sum is ${a}`);
+        }
+
+        else if (question.toUpperCase() == 'PRODUCT'){
+        var firstnum = 1;
+        for (let i = 1; i <= num; i++){
+            firstnum  = firstnum * i;
+        }
+
+        
+        document.write(`The product is ${firstnum}`);
+        }
+
+        else {
+        document.write(`wrong input`);}
+        
+    </script>
 </body>
 </html>
